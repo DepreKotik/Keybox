@@ -9,25 +9,39 @@
 </head>
 
 <body>
-  <header class="header container">
-    <a class="header__logo-link" href="index.html">
-      <svg class="header__logo" width="36" height="36"></svg>
-    </a>
-    <ul class="header__list">
-      <li class="header__item header__item--boxes">
-        <a class="header__nav-link" href="/">Каталог боксов</a>
-      </li>
-      <li class="header__item">
-        <a class="header__nav-link" href="/">Контакты</a>
-      </li>
-    </ul>
-    <a class="header__button-link" href="/">Выбрать бокс</a>
+  <header class="header">
+    <div class="header__wrapper container">
+      <a class="header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="assets/images/svg/logo-icon-width-name.svg" width="192" height="40">
+          <img class="header__logo" src="assets/images/svg/logo-icon.svg" width="36" height="36" alt="Логотип Кейбокс.">
+        </picture>
+      </a>
+      <ul class="header__list">
+        <li class="header__item header__item--boxes">
+          <a class="header__nav-link" href="/">Каталог боксов</a>
+        </li>
+        <li class="header__item">
+          <a class="header__nav-link" href="/">Контакты</a>
+        </li>
+      </ul>
+      <a class="header__button-link" href="/">Выбрать бокс</a>
+    </div>
   </header>
   <main>
     <section class="intro container">
       <div class="intro__wrapper">
-        <h1 class="intro__title">Надёжные боксы для хранения вещей в Тюмени</h1>
-        <img class="intro__img" src="/" alt="Предметы для хранения.">
+        <h1 class="intro__title">
+          <span class="intro__mobile-title">Надёжные боксы для хранения вещей в Тюмени</span>
+          <span class="intro__desktop-title">Боксы для хранения вещей в Тюмени</span>
+        </h1>
+        <p class="intro__description">В наших боксах ваша мебель и другие вещи останутся невредимыми.</p>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="/assets/images/content/intro-desktop.png">
+          <img class="intro__img" src="/assets/images/content/intro-mobile.png"
+            srcset="/assets/images/content/intro-mobile-2x.png 2x" width="288" height="257"
+            alt="Предметы для хранения.">
+        </picture>
         <a class="intro__link" href="/">Выбрать бокс</a>
       </div>
     </section>
@@ -37,61 +51,113 @@
         <li class="cases__item case">
           <h3 class="case__title">Ремонт</h3>
           <p class="case__description">Храните в боксах бытовую на время монтажных работ.</p>
-          <img class="case__img" src="/" width="256" height="170" alt="Ремонт.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="/assets/images/content/cases-repair-desktop.png,
+                 /assets/images/content/cases-repair-desktop-2x.png 2x" width="352" height="236">
+            <img class="case__img" src="/assets/images/content/cases-repair-mobile.png"
+              srcset="/assets/images/content/cases-repair-mobile-2x.png 2x" width="256" height="170" alt="Ремонт.">
+          </picture>
         </li>
         <li class="cases__item case">
           <h3 class="case__title">Переезд</h3>
           <p class="case__description">Оставьте у нас мебель пока ищете новую квартиру.</p>
-          <img class="case__img" src="/" width="256" height="170" alt="Переезд.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="/assets/images/content/cases-removal-desktop.png,
+               /assets/images/content/cases-removal-desktop-2x.png 2x" width="352" height="236">
+            <img class="case__img" src="/assets/images/content/cases-removal-mobile.png"
+              srcset="/assets/images/content/cases-removal-mobile-2x.png 2x" width="256" height="170" alt="Переезд.">
+          </picture>
         </li>
         <li class="cases__item case">
           <h3 class="case__title">Сезонные вещи</h3>
           <p class="case__description">Оставьте в боксах летние или зимние вещи.</p>
-          <img class="case__img" src="/" width="256" height="170" alt="Сезонные вещи.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="/assets/images/content/cases-seasons-desktop.png,
+                /assets/images/content/cases-seasons-desktop-2x.png 2x" width="352" height="236">
+            <img class="case__img" src="/assets/images/content/cases-seasons-mobile.png"
+              srcset="/assets/images/content/cases-seasons-mobile-2x.png 2x" width="256" height="170"
+              alt="Сезонные вещи.">
+          </picture>
         </li>
         <li class="cases__item case">
           <h3 class="case__title">Расхламление</h3>
           <p class="case__description">Освободите квартиру от вещей, которыми не пользуетесь.</p>
-          <img class="case__img" src="/" width="256" height="170" alt="Расхламление.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="/assets/images/content/cases-rubbish-desktop.png,
+                /assets/images/content/cases-rubbish-desktop-2x.png 2x" width="352" height="236">
+            <img class="case__img" src="/assets/images/content/cases-rubbish-mobile.png"
+              srcset="/assets/images/content/cases-rubbish-mobile-2x.png 2x" width="256" height="170"
+              alt="Расхламление.">
+          </picture>
         </li>
         <li class="cases__item case">
           <h3 class="case__title">Офисная техника</h3>
           <p class="case__description">Храните принтеры, столы, кресла во время переезда.</p>
-          <img class="case__img" src="/" width="256" height="170" alt="Офисная техника.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="/assets/images/content/cases-office-desktop.png,
+                /assets/images/content/cases-office-desktop-2x.png 2x" width="352" height="236">
+            <img class="case__img" src="/assets/images/content/cases-office-mobile.png"
+              srcset="/assets/images/content/cases-office-mobile-2x.png 2x" width="256" height="170"
+              alt="Офисная техника.">
+          </picture>
         </li>
-        <li class="cases__item case case--plug">
-          <svg class="case__plug-svg"></svg>
-        </li>
+        <li class="cases__item case case--plug"></li>
       </ul>
     </section>
     <section class="offer-email container">
       <div class="offer-email__wrapper">
         <h2 class="offer-email__title">Арендовать бокс для компании</h2>
-        <p class="offer-email__description">Если вы хотите арендовать бокс для вашей компании, напишите нам на почту 
-          и пришлите ваши реквизиты. Мы подготовим договор и счёт.</p>
-        <a class="offer-email__link" href="/">Написать на почту</a>
+        <div class="offer-email__container">
+          <p class="offer-email__description">Если вы хотите арендовать бокс для вашей компании, напишите нам на почту
+            и пришлите ваши реквизиты. Мы подготовим договор и счёт.</p>
+          <a class="offer-email__link" href="/">Написать на почту</a>
+        </div>
       </div>
     </section>
     <section class="features container">
       <h2 class="features__title">Как мы храним вещи</h2>
       <ul class="features__list">
         <li class="features__item">
-          <img class="features__img" src="/" width="288" height="220" alt="Отапливаемый сухой склад.">
-          <h3 class="features__item-title">Отапливаемый сухой склад</h3>
-          <p class="features__description">Боксы находятся на тёплом складе со своей котельной. Температура 
-            зимой — до +15, летом — до +25.</p>
+          <picture class="features__img-reverse">
+            <source media="(min-width: 1150px)" srcset="/assets/images/content/features-warehouse-desktop.png,
+               /assets/images/content/features-warehouse-desktop-2x.png 2x" width="542" height="415">
+            <img class="features__img" src="/assets/images/content/features-warehouse-mobile.png"
+              srcset="/assets/images/content/features-warehouse-mobile-2x.png 2x" width="288" height="220"
+              alt="Отапливаемый сухой склад.">
+          </picture>
+          <div class="features__wrapper features__wrapper--revers">
+            <h3 class="features__item-title">Отапливаемый сухой склад</h3>
+            <p class="features__description">Боксы находятся на тёплом складе со своей котельной. Температура
+              зимой — до +15, летом — до +25.</p>
+          </div>
         </li>
         <li class="features__item">
-          <img class="features__img" src="/" width="288" height="220" alt="Боксы из металлического профиля.">
-          <h3 class="features__item-title">Боксы из металлического профиля</h3>
-          <p class="features__description">Материал не пропускает влажность, пыль и грязь. Вещи останутся в том же
-             виде, в каком вы их оставили в боксе.</p>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="/assets/images/content/features-dry-desktop.png,
+             /assets/images/content/features-dry-desktop-2x.png 2x" width="542" height="415">
+            <img class="features__img" src="/assets/images/content/features-dry-mobile.png"
+              srcset="/assets/images/content/features-dry-mobile-2x.png 2x" width="288" height="220"
+              alt="Боксы из металлического профиля.">
+          </picture>
+          <div class="features__wrapper">
+            <h3 class="features__item-title">Боксы из металлического профиля</h3>
+            <p class="features__description">Материал не пропускает влажность, пыль и грязь. Вещи останутся в том же
+              виде, в каком вы их оставили в боксе.</p>
+          </div>
         </li>
         <li class="features__item">
-          <img class="features__img" src="/" width="288" height="220" alt="Дезинфекция от грызунов и насекомых.">
-          <h3 class="features__item-title">Дезинфекция от грызунов и насекомых</h3>
-          <p class="features__description">Мы обрабатываем боксы еженедельно и после того, 
-            как клиенты забирают вещи.</p>
+          <picture class="features__img-reverse">
+            <source media="(min-width: 1150px)" srcset="/assets/images/content/features-disinfection-desktop.png,
+             /assets/images/content/features-disinfection-desktop-2x.png 2x" width="542" height="415">
+            <img class="features__img" src="/assets/images/content/features-disinfection-mobile.png"
+              srcset="/assets/images/content/features-disinfection-mobile-2x.png 2x" width="288" height="220"
+              alt="Дезинфекция от грызунов и насекомых.">
+          </picture>
+          <div class="features__wrapper features__wrapper--revers">
+            <h3 class="features__item-title">Дезинфекция от грызунов и насекомых</h3>
+            <p class="features__description">Мы обрабатываем боксы еженедельно и после того,
+              как клиенты забирают вещи.</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -120,29 +186,35 @@
         </div>
       </div>
     </section>
-    <section class="sefety container">
-      <h2 class="sefety__title">Вещи под двойной защитой</h2>
-      <ul class="sefety__list">
-        <li class="sefety__item">
-          <h3 class="sefety__item-title">Домофон на входе в склад</h3>
-          <p class="sefety__description">Доступ к складу есть только у вас и у сотрудников «Кейбокса».</p>
-          <img class="sefety__img" src="/" width="256" height="226" alt="Домофон на входе в склад.">
+    <section class="safety container">
+      <h2 class="safety__title">Вещи под двойной защитой</h2>
+      <ul class="safety__list">
+        <li class="safety__item">
+          <h3 class="safety__item-title">Домофон на входе в склад</h3>
+          <p class="safety__description">Доступ к складу есть только у вас и у сотрудников «Кейбокса».</p>
+          <img class="safety__img safety__img--intercom" src="/assets/images/content/safety-intercom.png"
+            srcset="/assets/images/content/safety-intercom-2x.png 2x" width="256" height="226"
+            alt="Домофон на входе в склад.">
         </li>
-        <li class="sefety__item">
-          <h3 class="sefety__item-title">Кодовый замок на боксе</h3>
-          <p class="sefety__description">Отправим код доступа на вашу почту после оплаты.</p>
-          <img class="sefety__img" src="/" width="256" height="226" alt="Кодовый замок на боксе.">
+        <li class="safety__item">
+          <h3 class="safety__item-title">Кодовый замок на боксе</h3>
+          <p class="safety__description">Отправим код доступа на вашу почту после оплаты.</p>
+          <img class="safety__img" src="/assets/images/content/safety-lock.png"
+            srcset="/assets/images/content/safety-lock-2x.png 2x" width="256" height="226"
+            alt="Кодовый замок на боксе.">
         </li>
-        <li class="sefety__item">
-          <h3 class="sefety__item-title">Видеонаблюдение</h3>
-          <p class="sefety__description">Склады находятся под сигнализацией и видеонаблюдением.</p>
-          <img class="sefety__img" src="/" width="256" height="239" alt="Видеонаблюдение.">
+        <li class="safety__item">
+          <h3 class="safety__item-title">Видеонаблюдение</h3>
+          <p class="safety__description">Склады находятся под сигнализацией и видеонаблюдением.</p>
+          <img class="safety__img" src="/assets/images/content/safety-video.png"
+            srcset="/assets/images/content/safety-video-2x.png 2x" width="256" height="239" alt="Видеонаблюдение.">
         </li>
-        <li class="sefety__item">
-          <h3 class="sefety__item-title">Защита от пожара</h3>
-          <p class="sefety__description">При задымлении срабатывает датчик дыма. Для безопасности мы храним шины
-             и колёса в отдельном здании.</p>
-          <img class="sefety__img" src="/" width="256" height="226" alt="Защита от пожара.">
+        <li class="safety__item">
+          <h3 class="safety__item-title">Защита от пожара</h3>
+          <p class="safety__description">При задымлении срабатывает датчик дыма. Для безопасности мы храним шины
+            и колёса в отдельном здании.</p>
+          <img class="safety__img" src="/assets/images/content/safety-fire.png"
+            srcset="/assets/images/content/safety-fire-2x.png 2x" width="256" height="226" alt="Защита от пожара.">
         </li>
       </ul>
     </section>
@@ -153,25 +225,31 @@
           <li class="forbidden__item">
             <h3 class="forbidden__item-title">Взрывчатые и легковоспламеняющиеся вещества</h3>
             <p class="forbidden__description">Мы не принимаем бензин, лаки и масляные краски, спички,
-               фейерверки и газовые баллоны.</p>
+              фейерверки и газовые баллоны.</p>
           </li>
           <li class="forbidden__item">
             <h3 class="forbidden__item-title">Токсичные, едкие и радиоактивные материалы</h3>
             <p class="forbidden__description">В боксе нельзя хранить яды, ртуть, мышьяк, кислоты — всё,
-               что может быть опасно для человека.</p>
+              что может быть опасно для человека.</p>
           </li>
           <li class="forbidden__item">
             <h3 class="forbidden__item-title">Оружие, деньги и драгоценности</h3>
             <p class="forbidden__description">У нас нет сейфов, поэтому мы не храним огнестрельное
-               и травматическое оружие, боеприпасы и ювелирные изделия.</p>
+              и травматическое оружие, боеприпасы и ювелирные изделия.</p>
           </li>
           <li class="forbidden__item">
             <h3 class="forbidden__item-title">Продукты питания, алкоголь и запрещённые вещества</h3>
-            <p class="forbidden__description">В боксе поддерживается плюсовая температура, поэтому 
+            <p class="forbidden__description">В боксе поддерживается плюсовая температура, поэтому
               мы не принимаем продукты, заготовки, консервы и напитки.</p>
           </li>
         </ul>
-        <img class="forbidden__img" src="/" width="267" height="290" alt="Опасные, запрещенные к хранению вещи.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="/assets/images/content/forbbiden-desktop.png,
+             /assets/images/content/forbbiden-desktop-2x.png 2x" width="375" height="408">
+          <img class="forbidden__img" src="/assets/images/content/forbbiden-mobile.png"
+            srcset="/assets/images/content/forbbiden-mobile-2x.png 2x" width="260" height="280"
+            alt="Опасные, запрещенные к хранению вещи.">
+        </picture>
       </div>
     </section>
     <section class="offer-warehouse container">
@@ -182,56 +260,57 @@
       </div>
     </section>
     <section class="questions container">
-        <h2 class="questions__title">Ответы на вопросы</h2>
-        <ul class="questions__list">
-          <li class="questions__item">
-            <div class="questions__subject">Как упаковать вещи?
-              <button class="questions__button" type="button">
-                <span class="visually-hidden">Открыть/закрыть ответ</span>
-              </button>
-            </div>
-            <p class="questions__answer">Упакованные вещи лучше сохраняются при перевозке и хранятся дольше. Посуда, зеркала
-               и другие хрупкие предметы должны быть упакованы в крафтовую бумагу или пузырчатую плёнку. Для мягкой мебели
-                рекомендуем использовать чехлы. Шнуры от техники должны быть свёрнуты.</p>
-          </li>
-          <li class="questions__item">
-            <div class="questions__subject">Как подготовить бытовую технику к перевозке?
-              <button class="questions__button" type="button">
-                <span class="visually-hidden">Открыть/закрыть ответ</span>
-              </button>
-            </div>
-            <p class="questions__answer"></p>
-          </li>
-          <li class="questions__item">
-            <div class="questions__subject">Как восстановить доступ к боксу?
-              <button class="questions__button" type="button">
-                <span class="visually-hidden">Открыть/закрыть ответ</span>
-              </button>
-            </div>
-            <p class="questions__answer"></p>
-          </li>
-          <li class="questions__item">
-            <div class="questions__subject">Что делать, если я не успел забрать вещи до конца срока?
-              <button class="questions__button" type="button">
-                <span class="visually-hidden">Открыть/закрыть ответ</span>
-              </button>
-            </div>
-            <p class="questions__answer"></p>
-          </li>
-          <li class="questions__item">
-            <div class="questions__subject">Есть ли у вас скидки?
-              <button class="questions__button" type="button">
-                <span class="visually-hidden">Открыть/закрыть ответ</span>
-              </button>
-            </div>
-            <p class="questions__answer"></p>
-          </li>
-        </ul>
+      <h2 class="questions__title">Ответы на вопросы</h2>
+      <ul class="questions__list">
+        <li class="questions__item">
+          <div class="questions__subject">Как упаковать вещи?
+            <button class="questions__button" type="button">
+              <span class="visually-hidden">Открыть/закрыть ответ</span>
+            </button>
+          </div>
+          <p class="questions__answer">Упакованные вещи лучше сохраняются при перевозке и хранятся дольше. Посуда,
+            зеркала
+            и другие хрупкие предметы должны быть упакованы в крафтовую бумагу или пузырчатую плёнку. Для мягкой мебели
+            рекомендуем использовать чехлы. Шнуры от техники должны быть свёрнуты.</p>
+        </li>
+        <li class="questions__item">
+          <div class="questions__subject">Как подготовить бытовую технику к перевозке?
+            <button class="questions__button" type="button">
+              <span class="visually-hidden">Открыть/закрыть ответ</span>
+            </button>
+          </div>
+          <p class="questions__answer"></p>
+        </li>
+        <li class="questions__item">
+          <div class="questions__subject">Как восстановить доступ к боксу?
+            <button class="questions__button" type="button">
+              <span class="visually-hidden">Открыть/закрыть ответ</span>
+            </button>
+          </div>
+          <p class="questions__answer"></p>
+        </li>
+        <li class="questions__item">
+          <div class="questions__subject">Что делать, если я не успел забрать вещи до конца срока?
+            <button class="questions__button" type="button">
+              <span class="visually-hidden">Открыть/закрыть ответ</span>
+            </button>
+          </div>
+          <p class="questions__answer"></p>
+        </li>
+        <li class="questions__item">
+          <div class="questions__subject">Есть ли у вас скидки?
+            <button class="questions__button" type="button">
+              <span class="visually-hidden">Открыть/закрыть ответ</span>
+            </button>
+          </div>
+          <p class="questions__answer"></p>
+        </li>
+      </ul>
     </section>
     <section class="for-other-questions container">
       <div class="for-other-questions__wrapper">
         <h2 class="for-other-questions__title">Остались вопросы?</h2>
-        <span class="for-other-questions__description">Напишите нам на 
+        <span class="for-other-questions__description">Напишите нам на
           <a class="for-other-questions__link" href="/">info@storagehouse.ru</a>
         </span>
       </div>
@@ -243,7 +322,8 @@
   <footer class="footer">
     <div class="footer__container container">
       <a class="footer__logo-link">
-        <svg class="footer__logo-svg" width="219" height="41"></svg>
+        <img class="footer__logo-svg" src="/assets/images/svg/logo-icon-width-name.svg" width="219" height="41"
+          alt="Логотип Кейбокс.">
       </a>
       <div class="footer__wrapper">
         <div class="footer__link-container">
@@ -258,10 +338,10 @@
           <span class="footer__description">Мы в соцсетях</span>
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a class="footer__social-link" href="/">ВК</a>
+              <a class="footer__social-link" href="https://vk.com/keybox72">ВК</a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link" href="/">Телеграм</a>
+              <a class="footer__social-link" href="https://t.me/keybox72">Телеграм</a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="/">Вотсап</a>
@@ -277,7 +357,7 @@
               <a class="footer__navigation-link" href="/">Контакты</a>
             </li>
             <li class="footer__navigation-item">
-              <a class="footer__navigation-link footer__navigation-link" href="/">Стать партнёром</a>
+              <a class="footer__navigation-link footer__navigation-link--partners" href="/">Стать партнёром</a>
             </li>
           </ul>
         </div>
@@ -295,7 +375,7 @@
           </ul>
         </div>
         <div class="footer__link-container">
-          <a class="footer__lepiohin-link" href="/">
+          <a class="footer__lepiohin-link" href="https://lepekhin.studio">
             Сделано в Студии Лепёхина
             <span class="footer__year">2023</span>
           </a>
@@ -303,6 +383,7 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

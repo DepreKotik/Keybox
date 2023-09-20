@@ -27,7 +27,7 @@ export const styles = () => {
 const copy = (done) => {
   gulp
     .src(
-      ["develop/img/svg/*.svg", "develop/js/*.js", "develop/fonts/*.ttf"],
+      ["develop/images/**/*.{jpg,png}", "develop/images/svg/*.svg", "develop/js/*.js", "develop/fonts/*.ttf"],
       {
         base: "develop",
       }
@@ -39,9 +39,9 @@ const copy = (done) => {
 //Images
 
 const webp = () => {
-  return gulp.src('develop/img/**/*.{jpg,png}')
+  return gulp.src('develop/images/**/*.{jpg,png}')
   .pipe(libsquoosh({webp: {} }))
-  .pipe(gulp.dest('assets/img'));
+  .pipe(gulp.dest('assets/images'));
 }
 
 //Svg
@@ -89,6 +89,7 @@ const watcher = () => {
 export const start = gulp.series(
   clean,
   copy,
-  gulp.parallel(styles,sprite,webp),
-  gulp.series(server,watcher)
+  styles,
+  server,
+  watcher
 );
