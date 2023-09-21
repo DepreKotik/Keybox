@@ -435,7 +435,7 @@ ul {
 .offer-email__wrapper {
   padding: 32px 37px 24px 16px;
   margin-bottom: 34px;
-  background-image: url("/assets/images/svg/offer-background.svg");
+  background-image: url("../images/svg/offer-background.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
