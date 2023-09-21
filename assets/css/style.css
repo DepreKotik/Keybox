@@ -456,7 +456,7 @@ ul {
   .offer-email__wrapper {
     background-color: transparent;
     border-radius: 0;
-    background-image: url("/assets/images/svg/offer-background-desktop.svg");
+    background-image: url("../images/svg/offer-background-desktop.svg");
   }
 }
 
