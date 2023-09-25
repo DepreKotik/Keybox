@@ -435,7 +435,7 @@ ul {
 .offer-email__wrapper {
   padding: 32px 37px 24px 16px;
   margin-bottom: 34px;
-  background-image: url("/assets/images/svg/offer-background.svg");
+  background-image: url("../images/svg/offer-background.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -456,7 +456,7 @@ ul {
   .offer-email__wrapper {
     background-color: transparent;
     border-radius: 0;
-    background-image: url("/assets/images/svg/offer-background-desktop.svg");
+    background-image: url("../images/svg/offer-background-desktop.svg");
   }
 }
 
@@ -530,7 +530,7 @@ ul {
 }
 @media (min-width: 1150px) {
   .offer-email__link {
-    padding: 20px 100px 20px 32px;
+    padding: 20px 170px 20px 32px;
     flex-shrink: 0;
     font-size: 32px;
     line-height: 40px;

@@ -29,10 +29,10 @@ const setUpButtonState = (value) => {
 
 window.addEventListener('scroll', () => {
   let newValue = window.pageYOffset;
-  if (oldValue < newValue) {
-    setHeaderState('-100%')
-  } else {
+  if (oldValue > newValue || newValue === 0) {
     setHeaderState('0')
+  } else {
+    setHeaderState('-100%')
   }
   if (newValue >= 2100) {
     setUpButtonState('block')
