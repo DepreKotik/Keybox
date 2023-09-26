@@ -68,7 +68,6 @@ ul {
 }
 
 .container {
-  min-width: 320px;
   max-width: 520px;
   padding: 0 16px;
   width: 100%;
@@ -129,7 +128,7 @@ ul {
 }
 
 .header__nav-link {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   color: #3a3a3c;
   font-size: 14px;
   font-weight: 500;
@@ -238,7 +237,7 @@ ul {
 
 .intro__description {
   display: none;
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 130%;
@@ -411,7 +410,7 @@ ul {
 }
 
 .case__description {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -477,7 +476,7 @@ ul {
 }
 
 .offer-email__description {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -630,7 +629,7 @@ ul {
 }
 
 .features__description {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -712,7 +711,7 @@ ul {
 }
 
 .schedule-type__item {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
@@ -800,7 +799,7 @@ ul {
 }
 
 .round-the-clock-type__item {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
@@ -931,7 +930,7 @@ ul {
 }
 
 .safety__description {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1025,7 +1024,7 @@ ul {
 }
 
 .forbidden__description {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1094,7 +1093,7 @@ ul {
 }
 
 .offer-warehouse__description {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1198,31 +1197,40 @@ ul {
   }
 }
 
-.questions__subject {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  font-family: "Manrope";
+.questions__summary {
+  padding: 16px 48px 16px 16px;
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: -0.5px;
+  background-image: url("../images/svg/questions-plus.svg");
+  background-position: right 16px top 16px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  list-style: none;
+  cursor: pointer;
 }
 @media (min-width: 1150px) {
-  .questions__subject {
-    padding: 40px;
+  .questions__summary {
+    padding: 40px 80px 40px 40px;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -1px;
+    background-position: right 40px top 40px;
+    background-size: 32px 32px;
   }
 }
 
+.questions__subject[open] .questions__summary {
+  background-image: url("../images/svg/questions-minus.svg");
+}
+
 .questions__answer {
-  display: none;
+  display: block;
   padding: 24px 16px;
   border-top: 1px solid #ece8ff;
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1235,34 +1243,6 @@ ul {
     line-height: 130%;
     letter-spacing: -0.3px;
   }
-}
-
-.questions__item--open.questions__answer {
-  display: block;
-}
-
-.questions__button {
-  border: none;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  background-color: transparent;
-  background-image: url("../images/svg/questions-plus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.questions__button:hover {
-  opacity: 0.7;
-}
-@media (min-width: 1150px) {
-  .questions__button {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.questions__button--open {
-  background-image: url("../images/svg/questions-minus.svg");
 }
 
 .questions__link {
@@ -1297,7 +1277,7 @@ ul {
 
 .for-other-questions__description {
   display: block;
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 40px;
@@ -1374,7 +1354,7 @@ ul {
 
 .footer__description {
   display: block;
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1389,7 +1369,6 @@ ul {
 }
 
 .footer__social-link {
-  display: block;
   font-size: 18px;
   line-height: 26px;
   letter-spacing: -0.5px;
@@ -1444,7 +1423,7 @@ ul {
 }
 
 .footer__navigation-link {
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
