@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Кейбокс</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper container">
+      <a class="header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="assets/images/svg/logo-icon-width-name.svg" width="192"
+            height="40">
+          <img class="header__logo" src="assets/images/svg/logo-icon.svg" width="36" height="36" alt="Логотип Кейбокс.">
+        </picture>
+      </a>
+      <ul class="header__list">
+        <li class="header__item header__item--boxes">
+          <a class="header__nav-link" href="warehouse.html">Каталог боксов</a>
+        </li>
+        <li class="header__item">
+          <a class="header__nav-link" href="/">Контакты</a>
+        </li>
+      </ul>
+      <a class="header__button-link" href="warehouse.html">Выбрать бокс</a>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumbs container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__items">
+          <a class="breadcrumbs__link" href="warehouse.html">1. Выбор склада</a>
+        </li>
+        <li class="breadcrumbs__items">
+          <a class="breadcrumbs__link breadcrumbs__link--active" href="boxes.html">2. Выбор бокса</a>
+        </li>
+        <li class="breadcrumbs__items">
+          <a class="breadcrumbs__link" href="/">3. Выбор срока хранения</a>
+        </li>
+        <li class="breadcrumbs__items">
+          <a class="breadcrumbs__link" href="/">4. Оплата</a>
+        </li>
+      </ul>
+    </div>
+    <section class="boxes">
+      <h1 class="boxes__title">Выберите бокс</h1>
+      <form class="boxes__form form">
+        <h2 class="form__title">Фильтры</h2>
+        <button class="form__close-button" type="button">
+          <span class="visually-hidden">Закрыть фильтры</span>
+        </button>
+        <fieldset class="form__fieldset fieldset">
+          <legend class="fieldset__title">Склад</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Склад на Авторемонтной</span>
+                <input class="checkbox__input" type="checkbox" name="warehouse" value="autoremontnaya">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Около парка Горького</span>
+                <input class="checkbox__input" type="checkbox" name="warehouse" value="gorkogo">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset">
+          <legend class="fieldset__title">Предметы</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Шины и колёса</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="tires">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Велосипед или самокат</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="bicycle">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Коробки с одеждой и обувью</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="boxes">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Книги и документы</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="books">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Офисная мебель</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="office-furniture">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Офисная техника</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="office-equipment">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Банки с краской, обои, плинтуса</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="wallpaper">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Ящик с инструментами</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="tools">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Мягкая мебель</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="home-furniture">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Бытовая техника</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="home-equipment">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Одежда и обувь</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="clothes">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">Разобранная корпусная мебель</span>
+                <input class="checkbox__input" type="checkbox" name="items" value="disassembled-furniture">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset">
+          <legend class="fieldset__title">Склад</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label radio">
+                <span class="radio__description">Сезонное хранение</span>
+                <input class="radio__input" type="radio" name="for" value="season">
+                <span class="radio__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label radio">
+                <span class="radio__description">Хранение для бизнеса</span>
+                <input class="radio__input" type="radio" name="for" value="business">
+                <span class="radio__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label radio">
+                <span class="radio__description">Расхламление</span>
+                <input class="radio__input" type="radio" name="for" value="clutter">
+                <span class="radio__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label radio">
+                <span class="radio__description">Ремонт</span>
+                <input class="radio__input" type="radio" name="for" value="repair">
+                <span class="radio__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label radio">
+                <span class="radio__description">Переезд</span>
+                <input class="radio__input" type="radio" name="for" value="transportation">
+                <span class="radio__mark"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset">
+          <legend class="fieldset__title">Склад</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">1 м2</span>
+                <input class="checkbox__input" type="checkbox" name="square" value="1">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">1.5 м2</span>
+                <input class="checkbox__input" type="checkbox" name="square" value="1.5">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">2 м2</span>
+                <input class="checkbox__input" type="checkbox" name="square" value="2">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">4 м2</span>
+                <input class="checkbox__input" type="checkbox" name="square" value="4">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label checkbox">
+                <span class="checkbox__description">8 м2</span>
+                <input class="checkbox__input" type="checkbox" name="square" value="8">
+                <span class="checkbox__mark"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <div class="boxes__button-wrapper">
+        <button class="boxes__button" type="button">Фильтры</button>
+        <button class="boxes__button" type="button">Сбросить фильтры</button>
+      </div>
+      <div class="boxes__result result">
+        <h2 class="result__title">Маленькие</h2>
+        <ul class="result__list">
+          <li class="result__item">
+            <img class="result__img" src="/" width="" height="" alt="Фото бокса.">
+            <h3 class="result__item-title">Бокс 1 м2</h3>
+            <ul class="result__square-list">
+              <li class="result__square-item">Длина 1 м</li>
+              <li class="result__square-item">Ширина 1 м</li>
+              <li class="result__square-item">Высота 1 м</li>
+            </ul>
+            <ul class="result__for-list">
+              <li class="result__for-item">Шины и колёса</li>
+              <li class="result__for-item">Мангал, удочки</li>
+              <li class="result__for-item">Самокат</li>
+              <li class="result__for-item">Коробки с одеждой</li>
+            </ul>
+          </li>
+          <li class="result__item">
+            <img class="result__img" src="/" width="" height="" alt="Фото бокса.">
+            <h3 class="result__item-title">Бокс 1 м2</h3>
+            <ul class="result__square-list">
+              <li class="result__square-item">Длина 1 м</li>
+              <li class="result__square-item">Ширина 1 м</li>
+              <li class="result__square-item">Высота 1 м</li>
+            </ul>
+            <ul class="result__for-list">
+              <li class="result__for-item">Шины и колёса</li>
+              <li class="result__for-item">Мангал, удочки</li>
+              <li class="result__for-item">Самокат</li>
+              <li class="result__for-item">Коробки с одеждой</li>
+            </ul>
+          </li>
+        </ul>
+        <h2 class="result__title">Средние</h2>
+        <ul class="result__list">
+          <li class="result__item">
+            <img class="result__img" src="/" width="" height="" alt="Фото бокса.">
+            <h3 class="result__item-title">Бокс 2 м2</h3>
+            <ul class="result__square-list">
+              <li class="result__square-item">Длина 2 м</li>
+              <li class="result__square-item">Ширина 1 м</li>
+              <li class="result__square-item">Высота 2 м</li>
+            </ul>
+            <ul class="result__for-list">
+              <li class="result__for-item">Компьютеры</li>
+              <li class="result__for-item">Бытовая техника</li>
+              <li class="result__for-item">Детские игрушки</li>
+              <li class="result__for-item">Самокат</li>
+            </ul>
+          </li>
+          <li class="result__item">
+            <img class="result__img" src="/" width="" height="" alt="Фото бокса.">
+            <h3 class="result__item-title">Бокс 2 м2</h3>
+            <ul class="result__square-list">
+              <li class="result__square-item">Длина 2 м</li>
+              <li class="result__square-item">Ширина 1 м</li>
+              <li class="result__square-item">Высота 2 м</li>
+            </ul>
+            <ul class="result__for-list">
+              <li class="result__for-item">Компьютеры</li>
+              <li class="result__for-item">Бытовая техника</li>
+              <li class="result__for-item">Детские игрушки</li>
+              <li class="result__for-item">Самокат</li>
+            </ul>
+          </li>
+        </ul>
+        <h2 class="result__title">Большие</h2>
+        <ul class="result__list">
+          <li class="result__item">
+            <img class="result__img" src="/" width="" height="" alt="Фото бокса.">
+            <h3 class="result__item-title">Бокс 4 м2</h3>
+            <ul class="result__square-list">
+              <li class="result__square-item">Длина 2 м</li>
+              <li class="result__square-item">Ширина 2 м</li>
+              <li class="result__square-item">Высота 2 м</li>
+            </ul>
+            <ul class="result__for-list">
+              <li class="result__for-item">Двери и окна</li>
+              <li class="result__for-item">Стремянки</li>
+              <li class="result__for-item">Обои</li>
+              <li class="result__for-item">Мягкая мебель</li>
+              <li class="result__for-item">Бытовая техника</li>
+              <li class="result__for-item">Сантехника</li>
+              <li class="result__for-item">Посуда и цветочные горшки</li>
+            </ul>
+          </li>
+          <li class="result__item">
+            <img class="result__img" src="/" width="" height="" alt="Фото бокса.">
+            <h3 class="result__item-title">Бокс 4 м2</h3>
+            <ul class="result__square-list">
+              <li class="result__square-item">Длина 2 м</li>
+              <li class="result__square-item">Ширина 2 м</li>
+              <li class="result__square-item">Высота 2 м</li>
+            </ul>
+            <ul class="result__for-list">
+              <li class="result__for-item">Двери и окна</li>
+              <li class="result__for-item">Стремянки</li>
+              <li class="result__for-item">Обои</li>
+              <li class="result__for-item">Мягкая мебель</li>
+              <li class="result__for-item">Бытовая техника</li>
+              <li class="result__for-item">Сантехника</li>
+              <li class="result__for-item">Посуда и цветочные горшки</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <button class="up-button" type="button">
+      <span class="visually-hidden">Прокрутить страницу вверх</span>
+    </button>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <a class="footer__logo-link">
+        <img class="footer__logo-svg" src="assets/images/svg/logo-icon-width-name.svg" width="219" height="41"
+          alt="Логотип Кейбокс.">
+      </a>
+      <div class="footer__wrapper">
+        <div class="footer__link-container">
+          <span class="footer__description">В будни с 9 до 17</span>
+          <a class="footer__social-link" href="tel:+7(982)919-18-72">+7 982 919 18 72</a>
+        </div>
+        <div class="footer__link-container">
+          <span class="footer__description">В любое время</span>
+          <a class="footer__social-link" href="/">info@storagehouse.ru</a>
+        </div>
+        <div class="footer__link-container">
+          <span class="footer__description">Мы в соцсетях</span>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://vk.com/keybox72">ВК</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://t.me/keybox72">Телеграм</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="/">Вотсап</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link-container">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Каталог боксов</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Контакты</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Стать партнёром</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link-container">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Оферта</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Конфиденциальность</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Реквизиты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link-container">
+          <a class="footer__lepiohin-link" href="https://lepekhin.studio">
+            Сделано в Студии Лепёхина
+            <span class="footer__year">2023</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/init-scroll-listeners.js"></script>
+</body>
+
+</html>

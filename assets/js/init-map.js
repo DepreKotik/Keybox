@@ -9,7 +9,6 @@ const warehouseMap = document.querySelector('.warehouse__map');
 const map = new L.map(warehouseMap);
 
 const initMap = () => {
-  console.log(warehouseMap);
   map.on('load', () => {
     // getData(URL, onSuccess);
     map.addLayer(new L.TileLayer(LAYER_URL));
