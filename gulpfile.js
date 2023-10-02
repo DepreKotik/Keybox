@@ -47,14 +47,14 @@ const webp = () => {
 //Svg
 
 const sprite = () => {
-  return gulp.src('source/img/svg/inline-svg/*.svg')
+  return gulp.src('develop/images/svg/inline/*.svg')
   .pipe(
     svgstore({
     inlineSvg: true,
   })
   )
   .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('assets/img'));
+  .pipe(gulp.dest('assets/images/svg'));
 }
 
 //Clean
@@ -89,6 +89,7 @@ const watcher = () => {
 export const start = gulp.series(
   clean,
   copy,
+  sprite,
   styles,
   server,
   watcher

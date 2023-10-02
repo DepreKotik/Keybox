@@ -27,7 +27,6 @@
           <a class="header__nav-link" href="/">Контакты</a>
         </li>
       </ul>
-      <a class="header__button-link" href="warehouse.html">Выбрать бокс</a>
     </div>
   </header>
   <main>
@@ -51,36 +50,82 @@
       <h1 class="warehouse__title">Выберите склад</h1>
       <div class="warehouse__wrapper">
         <p class="warehouse__discription">Выберите ближайший бокс или оставьте вещи на охраняемом складе.</p>
-        <div class="warehouse__button-wrapper">
-          <button class="warehouse__button warehouse__button--map warehouse__button--active" type="button">Картой
-            <svg class="warehouse__button-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M13 8C13 11.2093 9.63256 13.4165 8.42475 14.105C8.15889 14.2565 7.84111 14.2565 7.57526 14.105C6.36745 13.4165 3 11.2093 3 8C3 5 5.42267 3 8 3C10.6667 3 13 5 13 8Z"
-                stroke="currentColor" stroke-width="1.5" />
-              <circle fill-rule="evenodd" clip-rule="evenodd" cx="8.00065" cy="7.9987" r="1.91667" stroke="currentColor"
-                stroke-width="1.5" />
+        <div class="warehouse__link-wrapper">
+          <a class="warehouse__link warehouse__link--active" href="warehouse-map.html">Картой
+            <svg width="16" height="16">
+              <use href="assets/images/svg/sprite.svg#map-button"></use>
             </svg>
-          </button>
-          <button class="warehouse__button warehouse__button--list" type="button">Списком
-            <svg class="warehouse__button-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33398 6.66797H14.6673" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6673 13.332H1.33398" stroke="currentColor"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </a>
+          <a class="warehouse__link" href="warehouse-list.html">Списком
+            <svg width="16" height="16">
+              <use href="assets/images/svg/sprite.svg#list-button"></use>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
-      <div class="warehouse__map warehouse__map--open">
+      <div class="warehouse__map">
       </div>
-      <ul class="warehouse__list">
-      </ul>
     </section>
     <button class="up-button" type="button">
       <span class="visually-hidden">Прокрутить страницу вверх</span>
     </button>
+    <article class="popup visually-hidden" id="avtoremontnaya">
+      <button class="popup__close-button">
+        <svg width="19" height="18">
+          <use href="assets/images/svg/sprite.svg#close-button"></use>
+        </svg> Закрыть
+      </button>
+      <div class="popup__wrapper">
+        <img class="popup__img" src="" width="288" height="168" alt="Фотография склада.">
+        <span class="popup__available">Доступно 16 боксов</span>
+      </div>
+      <h2 class="popup__title">Склад на Авторемонтной</h2>
+      <span class="popup__price">от 500 ₽</span>
+      <span class="popup__address">Тюмень, ​ул. Авторемонтная, 47</span>
+      <ul class="popup__space-list">
+        <li class="popup__space-item">1 м<sup>2</sup></li>
+        <li class="popup__space-item">1,5 м<sup>2</sup></li>
+        <li class="popup__space-item">2 м<sup>2</sup></li>
+        <li class="popup__space-item">4 м<sup>2</sup></li>
+        <li class="popup__space-item">8 м<sup>2</sup></li>
+      </ul>
+      <ul class="popup__features-list">
+        <li class="popup__features-item">C 9:00 до 17:00</li>
+        <li class="popup__features-item">Большие боксы и палеты</li>
+        <li class="popup__features-item">По звонку</li>
+        <li class="popup__features-item">C менеджером</li>
+      </ul>
+      <a class="popup__link" href="/">Выбрать бокс</a>
+    </article>
+    <article class="popup visually-hidden" id="gorichy">
+      <button class="popup__close-button">
+        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3391 4.5L5.33911 13.5" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33911 4.5L14.3391 13.5" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg> Закрыть
+      </button>
+      <div class="popup__wrapper">
+        <img class="popup__img" src="" width="288" height="168" alt="Фотография склада.">
+        <span class="popup__available">Доступно 16 боксов</span>
+      </div>
+      <h2 class="popup__title">Около парка Горького</h2>
+      <span class="popup__price">от 500 ₽</span>
+      <span class="popup__address">Тюмень, ​ул. Максима Горького, 76</span>
+      <ul class="popup__space-list">
+        <li class="popup__space-item">1 м<sup>2</sup></li>
+        <li class="popup__space-item">1,5 м<sup>2</sup></li>
+        <li class="popup__space-item">2 м<sup>2</sup></li>
+      </ul>
+      <ul class="popup__features-list">
+        <li class="popup__features-item">Круглосуточно</li>
+        <li class="popup__features-item">Маленькие боксы</li>
+        <li class="popup__features-item">Без менеджера</li>
+        <li class="popup__features-item">В удобное время</li>
+      </ul>
+      <a class="popup__link" href="/">Выбрать бокс</a>
+    </article>
   </main>
   <footer class="footer">
     <div class="footer__container container">
@@ -146,53 +191,6 @@
       </div>
     </div>
   </footer>
-  <template id="popup">
-    <div class="popup">
-      <button class="popup__close-button">
-        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3391 4.5L5.33911 13.5" stroke="currentColor"
-            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33911 4.5L14.3391 13.5" stroke="currentColor"
-            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg> Закрыть
-      </button>
-      <div class="popup__wrapper">
-        <img class="popup__img" src="" width="288" height="168" alt="Фотография склада.">
-        <span class="popup__available">Доступно 16 боксов</span>
-      </div>
-      <h2 class="popup__title">Склад на Авторемонтной</h2>
-      <span class="popup__price">от 500 ₽</span>
-      <span class="popup__address">Тюмень, ​ул. Авторемонтная, 47</span>
-      <ul class="popup__space-list">
-        <li class="popup__space-item">1 м2</li>
-        <li class="popup__space-item">1,5 м2</li>
-      </ul>
-      <ul class="popup__features-list">
-        <li class="popup__features-item">C 9:00 до 17:00</li>
-        <li class="popup__features-item">Большие боксы и палеты</li>
-      </ul>
-      <a class="popup__link" href="/">Выбрать бокс</a>
-    </div>
-  </template>
-  <template id="warehouse-card">
-    <li class="warehouse__item warehouse-card">
-      <img class="warehouse-card__img" src="" alt="Фотография склада.">
-      <div class="warehouse-card__container">
-        <h2 class="warehouse-card__title"></h2>
-        <span class="warehouse-card__address"></span>
-        <ul class="warehouse-card__features-list">
-          <li class="warehouse-card__features-item"></li>
-        </ul>
-      </div>
-      <div class="warehouse-card__container">
-        <div class="warehouse-card__wrapper">
-          <span class="warehouse-card__available"></span>
-          <span class="warehouse-card__price"></span>
-        </div>
-        <a class="warehouse-card__link" href="/">Выбрать бокс</a>
-      </div>
-    </li>
-  </template>
   <script src="leaflet/leaflet.js"></script>
   <script src="assets/js/init-scroll-listeners.js"></script>
   <script type="module" src="assets/js/main.js"></script>
