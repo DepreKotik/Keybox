@@ -3,21 +3,7 @@
   font-weight: 700;
   font-family: "GraphikLCG";
   font-display: swap;
-  src: url("../fonts/GraphikLCG-Bold.ttf") format("ttf");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Manrope";
-  font-display: swap;
-  src: url("../fonts/Manrope-Bold.ttf") format("ttf");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Manrope";
-  font-display: swap;
-  src: url("../fonts/Manrope-Medium.ttf") format("ttf");
+  src: url("../fonts/Graphik-Bold-Web.woff2") format("woff2");
 }
 *,
 *::before,
@@ -32,7 +18,7 @@ sup {
 body {
   margin: 0;
   padding: 0;
-  font-family: "GraphikLCG", Arial, sans-serif;
+  font-family: "GraphikLCG", "Manrope", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -126,7 +112,7 @@ ul {
 }
 
 .header__nav-link {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   color: #3a3a3c;
   font-size: 14px;
   font-weight: 500;
@@ -237,7 +223,7 @@ ul {
 
 .intro__description {
   display: none;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 130%;
@@ -407,7 +393,7 @@ ul {
 }
 
 .case__description {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -473,7 +459,7 @@ ul {
 }
 
 .offer-email__description {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -626,7 +612,7 @@ ul {
 }
 
 .features__description {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -708,7 +694,7 @@ ul {
 }
 
 .schedule-type__item {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
@@ -797,7 +783,7 @@ ul {
 }
 
 .round-the-clock-type__item {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
@@ -929,7 +915,7 @@ ul {
 }
 
 .safety__description {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1023,7 +1009,7 @@ ul {
 }
 
 .forbidden__description {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1092,7 +1078,7 @@ ul {
 }
 
 .offer-warehouse__description {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1229,7 +1215,7 @@ ul {
   display: block;
   padding: 24px 16px;
   border-top: 1px solid #ece8ff;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1276,7 +1262,7 @@ ul {
 
 .for-other-questions__description {
   display: block;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 40px;
@@ -1358,7 +1344,7 @@ ul {
 
 .footer__description {
   display: block;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1539,7 +1525,7 @@ ul {
 }
 
 .warehouse__discription {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1571,7 +1557,7 @@ ul {
 }
 
 .warehouse__link {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1622,7 +1608,7 @@ ul {
   padding: 0;
   border: none;
   background-color: transparent;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1649,7 +1635,7 @@ ul {
   position: absolute;
   top: 8px;
   right: 8px;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1678,7 +1664,7 @@ ul {
 }
 
 .popup__address {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -1696,7 +1682,7 @@ ul {
 }
 
 .popup__space-item {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -1711,7 +1697,7 @@ ul {
 }
 
 .popup__features-item {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -1966,12 +1952,13 @@ ul {
   display: none;
   position: fixed;
   top: 0;
-  width: 100%;
-  max-width: 520px;
+  right: 0;
+  left: 0;
   z-index: 100000;
   background-color: #ffffff;
   padding-top: 16px;
   padding-bottom: 16px;
+  box-shadow: 0px 2.76726px 2px 0px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px 0px rgba(0, 0, 0, 0.03), 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04);
 }
 .form__filters-wrapper--open {
   display: block;
@@ -1984,6 +1971,7 @@ ul {
     gap: 32px;
     position: static;
     padding: 0;
+    box-shadow: none;
   }
 }
 
@@ -2024,7 +2012,7 @@ ul {
   border: none;
   background-color: transparent;
   padding: 0;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -2060,7 +2048,7 @@ ul {
 
 .fieldset__title {
   padding: 0 22px 0 0;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
@@ -2128,21 +2116,25 @@ ul {
   width: 18px;
   height: 18px;
   border-radius: 4px;
-  outline: 2px solid #3a3a3c;
+  border: 2px solid #3a3a3c;
   flex-shrink: 0;
 }
 
 .checkbox__input:checked + .checkbox__mark {
-  outline-color: #098a54;
+  border-color: #098a54;
   background-image: url("../images/svg/filters-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.checkbox__input:focus-visible + .checkbox__mark {
+  outline: 2px solid #3a3a3c;
+}
+
 .checkbox__schedule,
 .checkbox__round-the-clock {
   display: block;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
@@ -2190,6 +2182,10 @@ ul {
   height: 8px;
   border-radius: 50%;
   background-color: #098a54;
+}
+
+.radio__input:focus-visible + .radio__mark {
+  outline: 2px solid #3a3a3c;
 }
 
 .result__title {
@@ -2289,7 +2285,7 @@ ul {
 }
 
 .result__square-item {
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -2312,7 +2308,7 @@ ul {
   border-radius: 16px;
   padding: 4px 12px;
   border: 1px solid #e5e5ea;
-  font-family: "Manrope", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;

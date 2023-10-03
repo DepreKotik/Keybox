@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Кейбокс</title>
 </head>
 
@@ -48,7 +51,7 @@
     <section class="boxes container">
       <h1 class="boxes__title">Выберите бокс</h1>
       <form class="boxes__form form">
-        <div class="form__filters-wrapper">
+        <div class="form__filters-wrapper container">
           <h2 class="form__title">Фильтры</h2>
           <button class="form__close-button" type="button">
             <svg width="24" height="24">
@@ -259,6 +262,9 @@
             <svg width="16" height="16">
               <use href="assets/images/svg/sprite.svg#close-button"></use>
             </svg>
+          </button>
+          <button class="form__button form__button--submit visually-hidden" type="submit">
+            <span class="visually-hidden">Применить фильтры.</span>
           </button>
         </div>
       </form>
