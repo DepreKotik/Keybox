@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="leaflet/leaflet.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
@@ -36,13 +35,13 @@
     <div class="breadcrumbs container">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__items">
-          <a class="breadcrumbs__link breadcrumbs__link--active" href="warehouse.html">1. Выбор склада</a>
+          <a class="breadcrumbs__link breadcrumbs__link--active" href="warehouse-list.html">1. Выбор склада</a>
         </li>
         <li class="breadcrumbs__items">
           <a class="breadcrumbs__link" href="boxes.html">2. Выбор бокса</a>
         </li>
         <li class="breadcrumbs__items">
-          <a class="breadcrumbs__link" href="/">3. Выбор срока хранения</a>
+          <a class="breadcrumbs__link" href="period.html">3. Выбор срока хранения</a>
         </li>
         <li class="breadcrumbs__items">
           <a class="breadcrumbs__link" href="/">4. Оплата</a>
@@ -70,8 +69,21 @@
         <li class="warehouse__item warehouse-card">
           <img class="warehouse-card__img" src="assets/images/content/walehouse-photo.jpg" alt="Фотография склада.">
           <div class="warehouse-card__container">
-            <h2 class="warehouse-card__title">Склад на Авторемонтной</h2>
-            <span class="warehouse-card__address">Тюмень, ​ул. Авторемонтная, 47</span>
+            <div class="warehouse-card__wrapper">
+              <h2 class="warehouse-card__title">Склад на Авторемонтной</h2>
+              <span class="warehouse-card__address">Тюмень, ​ул. Авторемонтная, 47</span>
+            </div>
+            <div class="warehouse-card__wrapper">
+              <span class="warehouse-card__available">Доступно 16 боксов</span>
+              <span class="warehouse-card__size">Размеры: </span>
+              <ul class="warehouse-card__space-list">
+                <li class="warehouse-card__space-item">1 м<sup>2</sup></li>
+                <li class="warehouse-card__space-item">1,5 м<sup>2</sup></li>
+                <li class="warehouse-card__space-item">2 м<sup>2</sup></li>
+                <li class="warehouse-card__space-item">4 м<sup>2</sup></li>
+                <li class="warehouse-card__space-item">8 м<sup>2</sup></li>
+              </ul>
+            </div>
             <ul class="warehouse-card__features-list">
               <li class="warehouse-card__features-item">C 9:00 до 17:00</li>
               <li class="warehouse-card__features-item">Большие боксы и палеты</li>
@@ -80,18 +92,28 @@
             </ul>
           </div>
           <div class="warehouse-card__container">
-            <div class="warehouse-card__wrapper">
-              <span class="warehouse-card__available">Доступно 16 боксов</span>
-              <span class="warehouse-card__price">от 500 ₽</span>
-            </div>
+            <span class="warehouse-card__price">от 500 ₽</span>
             <a class="warehouse-card__link" href="boxes.html">Выбрать бокс</a>
           </div>
         </li>
         <li class="warehouse__item warehouse-card">
           <img class="warehouse-card__img" src="assets/images/content/walehouse-photo-1.png" alt="Фотография склада.">
           <div class="warehouse-card__container">
-            <h2 class="warehouse-card__title">Около парка Горького</h2>
-            <span class="warehouse-card__address">Тюмень, ​ул. Авторемонтная, 47</span>
+            <div class="warehouse-card__wrapper">
+              <h2 class="warehouse-card__title">Около парка Горького</h2>
+              <span class="warehouse-card__address">Тюмень, ​ул. Авторемонтная, 47</span>
+            </div>
+            <div class="warehouse-card__wrapper">
+              <span class="warehouse-card__available">Доступно 16 боксов</span>
+              <span class="warehouse-card__size">Размеры: </span>
+              <ul class="warehouse-card__space-list">
+                <li class="warehouse-card__space-item">1 м<sup>2</sup></li>
+                <li class="warehouse-card__space-item">1,5 м<sup>2</sup></li>
+                <li class="warehouse-card__space-item">2 м<sup>2</sup></li>
+                <li class="warehouse-card__space-item">4 м<sup>2</sup></li>
+                <li class="warehouse-card__space-item">8 м<sup>2</sup></li>
+              </ul>
+            </div>
             <ul class="warehouse-card__features-list">
               <li class="warehouse-card__features-item">Круглосуточно</li>
               <li class="warehouse-card__features-item">Маленькие боксы</li>
@@ -100,10 +122,7 @@
             </ul>
           </div>
           <div class="warehouse-card__container">
-            <div class="warehouse-card__wrapper">
-              <span class="warehouse-card__available">Доступно 16 боксов</span>
-              <span class="warehouse-card__price">от 500 ₽</span>
-            </div>
+            <span class="warehouse-card__price">от 500 ₽</span>
             <a class="warehouse-card__link" href="boxes.html">Выбрать бокс</a>
           </div>
         </li>
@@ -115,7 +134,7 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo-link">
+      <a class="footer__logo-link" href="index.html">
         <img class="footer__logo-svg" src="assets/images/svg/logo-icon-width-name.svg" width="219" height="41"
           alt="Логотип Кейбокс.">
       </a>

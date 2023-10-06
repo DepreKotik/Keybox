@@ -27,7 +27,7 @@ export const styles = () => {
 const copy = (done) => {
   gulp
     .src(
-      ["develop/images/**/*.{jpg,png}", "develop/images/svg/*.svg", "develop/js/*.js", "develop/fonts/*.ttf"],
+      ["develop/images/**/*.{jpg,png}", "develop/images/svg/*.svg", "develop/js/*.js", "develop/fonts/*.{woff2, woff}"],
       {
         base: "develop",
       }

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="swiper/swiper.css">
+  <title>Кейбокс</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper container">
+      <a class="header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="assets/images/svg/logo-icon-width-name.svg" width="192"
+            height="40">
+          <img class="header__logo" src="assets/images/svg/logo-icon.svg" width="36" height="36" alt="Логотип Кейбокс.">
+        </picture>
+      </a>
+      <ul class="header__list">
+        <li class="header__item header__item--boxes">
+          <a class="header__nav-link" href="warehouse.html">Каталог боксов</a>
+        </li>
+        <li class="header__item">
+          <a class="header__nav-link" href="/">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumbs container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__items">
+          <a class="breadcrumbs__link" href="warehouse-map.html">1. Выбор склада</a>
+        </li>
+        <li class="breadcrumbs__items">
+          <a class="breadcrumbs__link" href="boxes.html">2. Выбор бокса</a>
+        </li>
+        <li class="breadcrumbs__items breadcrumbs__link--active">
+          <a class="breadcrumbs__link" href="period.html">3. Выбор срока хранения</a>
+        </li>
+        <li class="breadcrumbs__items">
+          <a class="breadcrumbs__link" href="payment.html">4. Оплата</a>
+        </li>
+      </ul>
+    </div>
+    <section class="period-intro container ">
+      <h1 class="period-intro__title">Бокс 2 м²</h1>
+      <div class="period-intro__slider slider">
+        <div class="slider__main">
+          <ul class="slider__list swiper-wrapper">
+            <li class="slider__item swiper-slide">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="assets/images/content/slider.png" width="864" height="604">
+                <img class="slider__big-img" src="assets/images/content/slider.png" width="288" height="169"
+                  alt="Изображение склада.">
+              </picture>
+            </li>
+            <li class="slider__item swiper-slide">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="assets/images/content/slider.png" width="864" height="604">
+                <img class="slider__big-img" src="assets/images/content/slider.png" width="288" height="169"
+                  alt="Изображение склада.">
+              </picture>
+            </li>
+            <li class="slider__item swiper-slide">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="assets/images/content/slider.png" width="864" height="604">
+                <img class="slider__big-img" src="assets/images/content/slider.png" width="288" height="169"
+                  alt="Изображение склада.">
+              </picture>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="slider__thumbnails">
+          <ul class="slider__thumbnails-list swiper-wrapper">
+            <li class="slider__thumbnails-item swiper-slide">
+              <img class="slider__img" src="assets/images/content/slider.png" width="86" height="64"
+                alt="Изображение склада.">
+            </li>
+            <li class="slider__thumbnails-item swiper-slide">
+              <img class="slider__img" src="assets/images/content/slider.png" width="86" height="64"
+                alt="Изображение склада.">
+            </li>
+            <li class="slider__thumbnails-item swiper-slide">
+              <img class="slider__img" src="assets/images/content/slider.png" width="86" height="64"
+                alt="Изображение склада.">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="period-intro__wrapper">
+        <div class="period-intro__description-wrapper">
+          <span class="period-intro__description period-intro__description--address">Тюмень, ​ул. Авторемонтная,
+            47</span>
+          <span class="period-intro__description period-intro__description--access">Доступ по индивидуальному
+            коду</span>
+        </div>
+        <h2 class="period-intro__second-title">Для чего</h2>
+        <ul class="period-intro__list">
+          <li class="period-intro__item">Накопилось много вещей</li>
+          <li class="period-intro__item">На одну комнату</li>
+          <li class="period-intro__item">Сезонное хранение вещей</li>
+          <li class="period-intro__item">Ремонт</li>
+        </ul>
+        <h2 class="period-intro__second-title">Срок аренды</h2>
+        <form class="period-intro__form period-form">
+          <fieldset class="period-form__fieldset">
+            <ul class="period-form__list">
+              <li class="period-form__item">
+                <label class="period-form__label period-radio">
+                  <input class="period-radio__input visually-hidden" type="radio" name="period" value="1">
+                  <span class="period-radio__wrapper">
+                    <span class="period-radio__time">1 месяц</span>
+                    <span class="period-radio__price">1899 ₽</span>
+                  </span>
+                </label>
+              </li>
+              <li class="period-form__item">
+                <label class="period-form__label period-radio">
+                  <input class="period-radio__input visually-hidden" type="radio" name="period" value="3">
+                  <span class="period-radio__wrapper">
+                    <span class="period-radio__time">3 месяца</span>
+                    <span class="period-radio__price">3899 ₽</span>
+                  </span>
+                </label>
+              </li>
+              <li class="period-form__item">
+                <label class="period-form__label period-radio">
+                  <input class="period-radio__input visually-hidden" type="radio" name="period" value="6">
+                  <span class="period-radio__wrapper">
+                    <span class="period-radio__time">6 месяцев</span>
+                    <span class="period-radio__price">6899 ₽</span>
+                  </span>
+                </label>
+              </li>
+              <li class="period-form__item">
+                <label class="period-form__label period-radio">
+                  <input class="period-radio__input visually-hidden" type="radio" name="period" value="9">
+                  <span class="period-radio__wrapper">
+                    <span class="period-radio__time">9 месяцев</span>
+                    <span class="period-radio__price">9899 ₽</span>
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <label class="period-form__checkbox period-checkbox">
+            <input class="period-checkbox__input visually-hidden" type="checkbox" name="delivery">
+            <span class="period-checkbox__mark"></span>
+            <span class="period-checkbox__description">Мне нужна доставка и услуги муверов</span>
+          </label>
+        </form>
+        <a class="period-intro__link" href="payment.html">Оплатить</a>
+      </div>
+    </section>
+    <section class="period-property container">
+      <h2 class="period-property__title">Характеристики</h2>
+      <ul class="period-property__size-list">
+        <li class="period-property__size-item">
+          <div class="period-property__wrapper">
+            <h3 class="period-property__size-title">Площадь</h3>
+            <span class="period-property__size-value">2 м<sup class="period-property__sup">2</sup></span>
+          </div>
+        </li>
+        <li class="period-property__size-item">
+          <div class="period-property__wrapper">
+            <h3 class="period-property__size-title">Объём</h3>
+            <span class="period-property__size-value">4 м<sup class="period-property__sup">3</sup></span>
+          </div>
+        </li>
+        <li class="period-property__size-item">
+          <div class="period-property__wrapper">
+            <h3 class="period-property__size-title">Размеры</h3>
+            <dl class="period-property__amount-list">
+              <div class="period-property__amount-item">
+                <dt class="period-property__amount-value">Длина</dt>
+                <dd class="period-property__amount-description">2 м</dd>
+              </div>
+              <div class="period-property__amount-item">
+                <dt class="period-property__amount-value">Ширина</dt>
+                <dd class="period-property__amount-description">1 м</dd>
+              </div>
+              <div class="period-property__amount-item">
+                <dt class="period-property__amount-value">Высота</dt>
+                <dd class="period-property__amount-description">2 м</dd>
+              </div>
+            </dl>
+          </div>
+        </li>
+      </ul>
+      <h2 class="period-property__title">Примеры боксов с вещами</h2>
+      <ul class="period-property__img-list">
+        <li class="period-property__img-item">
+          <img class="period-property__img" src="assets/images/content/period-example-1.png" alt="Изображение склада.">
+        </li>
+        <li class="period-property__img-item">
+          <img class="period-property__img" src="assets/images/content/period-example-2.png" alt="Изображение склада.">
+        </li>
+        <li class="period-property__img-item">
+          <img class="period-property__img" src="assets/images/content/period-example-3.png" alt="Изображение склада.">
+        </li>
+      </ul>
+    </section>
+    <button class="up-button" type="button">
+      <span class="visually-hidden">Прокрутить страницу вверх</span>
+    </button>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <a class="footer__logo-link" href="index.html">
+        <img class="footer__logo-svg" src="assets/images/svg/logo-icon-width-name.svg" width="219" height="41"
+          alt="Логотип Кейбокс.">
+      </a>
+      <div class="footer__wrapper">
+        <div class="footer__link-container">
+          <span class="footer__description">В будни с 9 до 17</span>
+          <a class="footer__social-link" href="tel:+7(982)919-18-72">+7 982 919 18 72</a>
+        </div>
+        <div class="footer__link-container">
+          <span class="footer__description">В любое время</span>
+          <a class="footer__social-link" href="/">info@storagehouse.ru</a>
+        </div>
+        <div class="footer__link-container">
+          <span class="footer__description">Мы в соцсетях</span>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://vk.com/keybox72">ВК</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://t.me/keybox72">Телеграм</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="/">Вотсап</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link-container">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Каталог боксов</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Контакты</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Стать партнёром</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link-container">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Оферта</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Конфиденциальность</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="/">Реквизиты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link-container">
+          <a class="footer__lepiohin-link" href="https://lepekhin.studio">
+            Сделано в Студии Лепёхина
+            <span class="footer__year">2023</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="swiper/swiper.js"></script>
+  <script src="assets/js/initSlider.js"></script>
+  <script src="assets/js/init-scroll-listeners.js"></script>
+</body>
+
+</html>
