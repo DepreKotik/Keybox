@@ -23,96 +23,51 @@
       </a>
       <ul class="header__list">
         <li class="header__item header__item--boxes">
-          <a class="header__nav-link" href="warehouse.html">Каталог боксов</a>
+          <a class="header__nav-link" href="warehouse-map.html">Каталог боксов</a>
         </li>
         <li class="header__item">
           <a class="header__nav-link" href="contacts.html">Контакты</a>
         </li>
       </ul>
+      <a class="header__button-link" href="warehouse-map.html">Выбрать бокс</a>
     </div>
   </header>
   <main>
-    <div class="container container--payment-mod">
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__items">
-            <a class="breadcrumbs__link" href="warehouse-map.html">1. Выбор склада</a>
-          </li>
-          <li class="breadcrumbs__items">
-            <a class="breadcrumbs__link" href="boxes.html">2. Выбор бокса</a>
-          </li>
-          <li class="breadcrumbs__items">
-            <a class="breadcrumbs__link" href="period.html">3. Выбор срока хранения</a>
-          </li>
-          <li class="breadcrumbs__items">
-            <a class="breadcrumbs__link breadcrumbs__link--active" href="##">4. Оплата</a>
-          </li>
-        </ul>
+    <section class="message">
+      <div class="message__wrapper container">
+        <h1 class="message__title">Вы&nbsp;забронировали бокс</h1>
+        <p class="message__description">
+          Мы&nbsp;отправили пароли от&nbsp;склада и&nbsp;бокса на&nbsp;вашу почту
+          <span class="succes__user-mail">example@mail.com.</span>
+          Также в&nbsp;письме вы&nbsp;найдёте инструкцию, как пользоваться боксом.
+        </p>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="assets/images/content/success-mail-message.png, 
+          assets/images/content/success-mail-message-2x.png 2x" width="440" height="514">
+          <img class="message__img" src="assets/images/content/success-mail-message.png"
+            srcset="assets/images/content/success-mail-message-2x.png 2x" width="227" height="240"
+            alt="Изображение почтового ящика.">
+        </picture>
       </div>
-      <section class="payment">
-        <h1 class="payment__title">Арендовать бокс</h1>
-        <div class="payment__wrapper">
-          <div class="payment__container">
-            <p class="payment__description">Бокс почти ваш. Оплатите аренду в&nbsp;течение
-              <span class="payment__timer">19:45</span>минут, чтобы он&nbsp;не&nbsp;достался кому-то другому.
-            </p>
-            <h2 class="payment__second-title">Ваши контакты</h2>
-            <form class="payment__form">
-              <input class="payment__input" type="text" placeholder="Имя и фамилия" name="name">
-              <input class="payment__input" type="tel" placeholder="+7 _ _ _  _ _ _  _ _  _ _" name="tel">
-              <input class="payment__input" type="email" placeholder="Электронная почта" name="email">
-              <button class="payment__submit visually-hidden" type="submit">
-                <span class="visually-hidden">Отправить данные</span>
-              </button>
-            </form>
-          </div>
-          <article class="payment__bill bill">
-            <h2 class="bill__title">Вы выбрали</h2>
-            <img class="bill__img" src="assets/images/content/box-2.png" width="76" height="82" alt="Изображение бокса.">
-            <div class="bill__wrapper">
-              <h3 class="bill__second-title bill__second-title--margin-mod">Бокс 2 м²</h3>
-              <span class="bill__volume">Объем 4 м3</span>
-              <span class="bill__size">ДШВ: 2 × 1 × 2 м</span>
-              <span class="bill__address">г. Тюмень, ул. Авторемонтная, 47</span>
-            </div>
-            <h3 class="bill__second-title">Сумма к оплате</h3>
-            <div class="bill__container">
-              <div class="bill__item-wrapper">
-                <span class="bill__period">1 месяц аренды</span>
-                <span class="bill__price">1899 ₽</span>
-              </div>
-              <span class="bill__delivery">Доставка и услуги муверов</span>
-            </div>
-            <div class="bill__sum-wrapper">
-              <span class="bill__description">Итого</span>
-              <span class="bill__sum">12 599 ₽</span>
-            </div>
-          </article>
-        </div>
-        <a class="payment__link" href="/">Оплатить</a>
-      </section>
-    </div>
-    <button class="up-button" type="button">
-      <span class="visually-hidden">Прокрутить страницу вверх</span>
-    </button>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo-link" href="index.html">
+      <a class="footer__logo-link" href="##">
         <img class="footer__logo-svg" src="assets/images/svg/logo-icon-width-name.svg" width="219" height="41"
           alt="Логотип Кейбокс.">
       </a>
       <div class="footer__wrapper">
         <div class="footer__link-container">
-          <span class="footer__description">В будни с 9 до 17</span>
+          <span class="footer__description">В&nbsp;будни с&nbsp;9&nbsp;до&nbsp;17</span>
           <a class="footer__social-link" href="tel:+7(982)919-18-72">+7 982 919 18 72</a>
         </div>
         <div class="footer__link-container">
-          <span class="footer__description">В любое время</span>
+          <span class="footer__description">В&nbsp;любое время</span>
           <a class="footer__social-link" href="/">info@storagehouse.ru</a>
         </div>
         <div class="footer__link-container">
-          <span class="footer__description">Мы в соцсетях</span>
+          <span class="footer__description">Мы&nbsp;в&nbsp;соцсетях</span>
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://vk.com/keybox72">ВК</a>
@@ -160,7 +115,6 @@
       </div>
     </div>
   </footer>
-  <script src="assets/js/timer.js"></script>
   <script src="assets/js/init-scroll-listeners.js"></script>
 </body>
 

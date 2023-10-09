@@ -26,7 +26,7 @@
           <a class="header__nav-link" href="warehouse-map.html">Каталог боксов</a>
         </li>
         <li class="header__item">
-          <a class="header__nav-link" href="/">Контакты</a>
+          <a class="header__nav-link" href="contacts.html">Контакты</a>
         </li>
       </ul>
     </div>
@@ -38,7 +38,7 @@
           <a class="breadcrumbs__link" href="warehouse-map.html">1. Выбор склада</a>
         </li>
         <li class="breadcrumbs__items">
-          <a class="breadcrumbs__link breadcrumbs__link--active" href="boxes.html">2. Выбор бокса</a>
+          <a class="breadcrumbs__link breadcrumbs__link--active" href="##">2. Выбор бокса</a>
         </li>
         <li class="breadcrumbs__items">
           <a class="breadcrumbs__link" href="period.html">3. Выбор срока хранения</a>
@@ -258,7 +258,7 @@
               <use href="assets/images/svg/sprite.svg#filters-open-button"></use>
             </svg>
           </button>
-          <button class="form__button" type="reset">Сбросить фильтры
+          <button class="form__button form__button--reset visually-hidden" type="reset">Сбросить фильтры
             <svg width="16" height="16">
               <use href="assets/images/svg/sprite.svg#close-button"></use>
             </svg>
@@ -267,6 +267,9 @@
             <span class="visually-hidden">Применить фильтры.</span>
           </button>
         </div>
+        <ul class="form__filter-list">
+
+        </ul>
       </form>
       <div class="boxes__result result">
         <h2 class="result__title">Маленькие</h2>
@@ -562,6 +565,11 @@
       </div>
     </div>
   </footer>
+  <template id="form__filter-item">
+    <li class="form__filter-item">
+      <button class="form__filter-button" type="button"></button>
+    </li>
+  </template>
   <script src="assets/js/init-scroll-listeners.js"></script>
   <script src="assets/js/form.js"></script>
 </body>

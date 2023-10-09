@@ -1,6 +1,19 @@
 const formFiltersWrapper = document.querySelector('.form__filters-wrapper');
 const formButtonOpenFilters = document.querySelector('.form__button--open-filters');
 const formCloseButton = document.querySelector('.form__close-button');
+const formButtonReset = document.querySelector('.form__button--reset');
+const form = document.querySelector('.form');
+const formFilterItem = document.querySelector('#form__filter-item').content.querySelector('.form__filter-item');
+const formFilterList = document.querySelector('.form__filter-list');
+const fieldsetLabels = document.querySelectorAll('.fieldset__label');
+
+form.addEventListener('change', () => {
+  formButtonReset.classList.remove('visually-hidden');
+});
+
+formButtonReset.addEventListener('click', () => {
+  formButtonReset.classList.add('visually-hidden');
+});
 
 formFiltersWrapper.addEventListener('click', ({target}) => {
   const fieldsetOpen = document.querySelector('.fieldset--open');
@@ -11,7 +24,7 @@ formFiltersWrapper.addEventListener('click', ({target}) => {
     target.classList.add('fieldset--open');
   } else {
     target.classList.remove('fieldset--open');
-  }
+  };
 });
 
 formButtonOpenFilters.addEventListener('click', () => {
