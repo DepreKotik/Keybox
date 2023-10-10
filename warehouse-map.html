@@ -66,69 +66,82 @@
           </a>
         </div>
       </div>
-      <div class="warehouse__map">
+      <div class="warehouse__container">
+        <div class="warehouse__map">
+        </div>
+        <article class="popup" id="avtoremontnaya">
+          <button class="popup__close-button">
+            <svg width="19" height="18">
+              <use href="assets/images/svg/sprite.svg#close-button"></use>
+            </svg> Закрыть
+          </button>
+          <div class="popup__wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="assets/images/content/walehouse-photo.jpg" width="344"
+              height="168">
+              <img class="popup__img" src="assets/images/content/walehouse-photo.jpg" width="288" height="168"
+                alt="Фотография склада.">
+            </picture>
+            <span class="popup__available">Доступно 16 боксов</span>
+          </div>
+          <div class="popup__container">
+            <h2 class="popup__title">Склад на&nbsp;Авторемонтной</h2>
+            <span class="popup__price">от&nbsp;500&nbsp;₽</span>
+          </div>
+          <span class="popup__address">Тюмень, ​ул. Авторемонтная, 47</span>
+          <ul class="popup__space-list">
+            <li class="popup__space-item">1&nbsp;м<sup>2</sup></li>
+            <li class="popup__space-item">1,5 м<sup>2</sup></li>
+            <li class="popup__space-item">2&nbsp;м<sup>2</sup></li>
+            <li class="popup__space-item">4&nbsp;м<sup>2</sup></li>
+            <li class="popup__space-item">8&nbsp;м<sup>2</sup></li>
+          </ul>
+          <ul class="popup__features-list">
+            <li class="popup__features-item">C 9:00 до 17:00</li>
+            <li class="popup__features-item">Большие боксы и&nbsp;палеты</li>
+            <li class="popup__features-item">По звонку</li>
+            <li class="popup__features-item">C менеджером</li>
+          </ul>
+          <a class="popup__link" href="boxes.html">Выбрать бокс</a>
+        </article>
+        <article class="popup" id="gorichy">
+          <button class="popup__close-button">
+            <svg width="19" height="18">
+              <use href="assets/images/svg/sprite.svg#close-button"></use>
+            </svg> Закрыть
+          </button>
+          <div class="popup__wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="assets/images/content/walehouse-photo-1.png" width="344"
+              height="168">
+              <img class="popup__img" src="assets/images/content/walehouse-photo-1.png" width="288" height="168"
+                alt="Фотография склада.">
+            </picture>
+            <span class="popup__available">Доступно 16 боксов</span>
+          </div>
+          <div class="popup__container">
+            <h2 class="popup__title">Около парка Горького</h2>
+            <span class="popup__price">от 500 ₽</span>
+          </div>
+          <span class="popup__address">Тюмень, ​ул. Максима Горького, 76</span>
+          <ul class="popup__space-list">
+            <li class="popup__space-item">1 м<sup>2</sup></li>
+            <li class="popup__space-item">1,5 м<sup>2</sup></li>
+            <li class="popup__space-item">2 м<sup>2</sup></li>
+          </ul>
+          <ul class="popup__features-list">
+            <li class="popup__features-item">Круглосуточно</li>
+            <li class="popup__features-item">Маленькие боксы</li>
+            <li class="popup__features-item">Без менеджера</li>
+            <li class="popup__features-item">В удобное время</li>
+          </ul>
+          <a class="popup__link" href="boxes.html">Выбрать бокс</a>
+        </article>
       </div>
     </section>
     <button class="up-button" type="button">
       <span class="visually-hidden">Прокрутить страницу вверх</span>
     </button>
-    <article class="popup visually-hidden" id="avtoremontnaya">
-      <button class="popup__close-button">
-        <svg width="19" height="18">
-          <use href="assets/images/svg/sprite.svg#close-button"></use>
-        </svg> Закрыть
-      </button>
-      <div class="popup__wrapper">
-        <img class="popup__img" src="" width="288" height="168" alt="Фотография склада.">
-        <span class="popup__available">Доступно 16 боксов</span>
-      </div>
-      <h2 class="popup__title">Склад на&nbsp;Авторемонтной</h2>
-      <span class="popup__price">от&nbsp;500&nbsp;₽</span>
-      <span class="popup__address">Тюмень, ​ул. Авторемонтная, 47</span>
-      <ul class="popup__space-list">
-        <li class="popup__space-item">1&nbsp;м<sup>2</sup></li>
-        <li class="popup__space-item">1,5 м<sup>2</sup></li>
-        <li class="popup__space-item">2&nbsp;м<sup>2</sup></li>
-        <li class="popup__space-item">4&nbsp;м<sup>2</sup></li>
-        <li class="popup__space-item">8&nbsp;м<sup>2</sup></li>
-      </ul>
-      <ul class="popup__features-list">
-        <li class="popup__features-item">C 9:00 до 17:00</li>
-        <li class="popup__features-item">Большие боксы и&nbsp;палеты</li>
-        <li class="popup__features-item">По звонку</li>
-        <li class="popup__features-item">C менеджером</li>
-      </ul>
-      <a class="popup__link" href="/">Выбрать бокс</a>
-    </article>
-    <article class="popup visually-hidden" id="gorichy">
-      <button class="popup__close-button">
-        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3391 4.5L5.33911 13.5" stroke="currentColor"
-            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33911 4.5L14.3391 13.5" stroke="currentColor"
-            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg> Закрыть
-      </button>
-      <div class="popup__wrapper">
-        <img class="popup__img" src="" width="288" height="168" alt="Фотография склада.">
-        <span class="popup__available">Доступно 16 боксов</span>
-      </div>
-      <h2 class="popup__title">Около парка Горького</h2>
-      <span class="popup__price">от 500 ₽</span>
-      <span class="popup__address">Тюмень, ​ул. Максима Горького, 76</span>
-      <ul class="popup__space-list">
-        <li class="popup__space-item">1 м<sup>2</sup></li>
-        <li class="popup__space-item">1,5 м<sup>2</sup></li>
-        <li class="popup__space-item">2 м<sup>2</sup></li>
-      </ul>
-      <ul class="popup__features-list">
-        <li class="popup__features-item">Круглосуточно</li>
-        <li class="popup__features-item">Маленькие боксы</li>
-        <li class="popup__features-item">Без менеджера</li>
-        <li class="popup__features-item">В удобное время</li>
-      </ul>
-      <a class="popup__link" href="/">Выбрать бокс</a>
-    </article>
   </main>
   <footer class="footer">
     <div class="footer__container container">
@@ -196,7 +209,7 @@
   </footer>
   <script src="leaflet/leaflet.js"></script>
   <script src="assets/js/init-scroll-listeners.js"></script>
-  <script type="module" src="assets/js/main.js"></script>
+  <script src="assets/js/init-map.js"></script>
 </body>
 
 </html>

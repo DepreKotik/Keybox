@@ -1598,6 +1598,10 @@ ul {
   gap: 8px;
 }
 
+.warehouse__container {
+  position: relative;
+}
+
 .warehouse__map {
   display: block;
   width: 100%;
@@ -1612,9 +1616,27 @@ ul {
 }
 
 .popup {
+  display: none;
   width: 320px;
   margin: 0 auto;
   padding: 0 16px;
+  background-color: #ffffff;
+}
+.popup--open {
+  padding-top: 24px;
+  display: block;
+}
+@media (min-width: 1150px) {
+  .popup {
+    padding: 32px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 408px;
+  }
 }
 
 .popup__close-button {
@@ -1630,18 +1652,36 @@ ul {
   align-items: center;
   gap: 4px;
   margin-bottom: 4px;
+  cursor: pointer;
+}
+@media (min-width: 1150px) {
+  .popup__close-button {
+    margin-bottom: 24px;
+  }
 }
 
 .popup__wrapper {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
+}
+@media (min-width: 1150px) {
+  .popup__wrapper {
+    margin-bottom: 24px;
+  }
 }
 
 .popup__img {
-  display: block;
-  margin: 0 auto 16px auto;
+  border-radius: 16px;
+}
+
+@media (min-width: 1150px) {
+  .popup__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
 }
 
 .popup__available {
@@ -1686,12 +1726,22 @@ ul {
   margin-bottom: 16px;
   color: #8e8e93;
 }
+@media (min-width: 1150px) {
+  .popup__address {
+    margin-bottom: 8px;
+  }
+}
 
 .popup__space-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 16px;
   margin-bottom: 16px;
+}
+@media (min-width: 1150px) {
+  .popup__space-list {
+    margin-bottom: 24px;
+  }
 }
 
 .popup__space-item {
@@ -1708,6 +1758,11 @@ ul {
   gap: 4px;
   margin-bottom: 16px;
 }
+@media (min-width: 1150px) {
+  .popup__features-list {
+    margin-bottom: 24px;
+  }
+}
 
 .popup__features-item {
   font-family: "Manrope", sans-serif;
@@ -1721,7 +1776,7 @@ ul {
 }
 
 .popup__link {
-  padding: 11px 16px;
+  padding: 11px 100px 11px 16px;
   border-radius: 12px 32px 32px 12px;
   background-color: #0aa85f;
   display: block;
@@ -1745,6 +1800,11 @@ ul {
   height: 14px;
   background-image: url("../images/svg/intro-arrow.svg");
   background-repeat: no-repeat;
+}
+@media (min-width: 1150px) {
+  .popup__link {
+    padding: 16px 180px 16px 16px;
+  }
 }
 
 .warehouse-card {
@@ -2198,22 +2258,6 @@ ul {
   outline: 2px solid #3a3a3c;
 }
 
-.checkbox__schedule,
-.checkbox__round-the-clock {
-  display: block;
-  font-family: "Manrope", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 12px;
-  letter-spacing: -0.5px;
-  padding-left: 28px;
-  color: #098a54;
-}
-
-.checkbox__schedule {
-  color: #6349db;
-}
-
 .radio {
   display: flex;
   align-items: center;
@@ -2255,6 +2299,22 @@ ul {
 
 .radio__input:focus-visible + .radio__mark {
   outline: 2px solid #3a3a3c;
+}
+
+.radio__schedule,
+.radio__round-the-clock {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: -0.5px;
+  padding-left: 28px;
+  color: #098a54;
+}
+
+.radio__schedule {
+  color: #6349db;
 }
 
 .result__title {
