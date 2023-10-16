@@ -15,14 +15,21 @@ sup {
   font-size: 10px;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: "GraphikLCG", "Manrope", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: #3a3a3c;
+  height: 100%;
+  position: relative;
 }
 
 a {
@@ -1334,6 +1341,12 @@ ul {
     background-image: url("../images/svg/footer-background-desktop.svg");
   }
 }
+.footer--message-mod {
+  position: sticky;
+  top: 100vh;
+  left: 0;
+  right: 0;
+}
 
 .footer__container {
   padding: 48px 16px;
@@ -1375,7 +1388,7 @@ ul {
   color: #3a3a3c;
 }
 .footer__social-link:hover {
-  border-bottom: 1px solid #3a3a3c;
+  border-bottom: 3px solid #3a3a3c;
 }
 @media (min-width: 1150px) {
   .footer__social-link {
@@ -3310,13 +3323,28 @@ ul {
 }
 
 .message {
-  background-color: rgba(126, 238, 182, 0.3019607843);
-  overflow: hidden;
+  background-color: #D9FAEA;
+  position: relative;
+}
+.message::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: #D9FAEA;
 }
 .message--error {
-  background-color: rgba(255, 186, 183, 0.6);
+  background-color: #FFEBDF;
+}
+.message--error::after {
+  background-color: #FFEBDF;
 }
 .message--delay {
+  background-color: #FFF0D9;
+}
+.message--delay::after {
   background-color: #FFF0D9;
 }
 
@@ -3332,9 +3360,6 @@ ul {
     padding-bottom: 100px;
     min-height: 660px;
     position: relative;
-  }
-  .message__wrapper--delay {
-    min-height: 460px;
   }
 }
 
@@ -3384,15 +3409,13 @@ ul {
   }
 }
 
-.message__description-link,
-.message__link,
-.message__phone {
+.message__link {
   color: inherit;
-}
-.message__description-link:hover,
-.message__link:hover,
-.message__phone:hover {
   border-bottom: 1px solid #8e8e93;
+}
+.message__link:hover {
+  color: #098a54;
+  border-color: #098a54;
 }
 
 .message__img {
@@ -3413,14 +3436,15 @@ ul {
     margin: 0;
   }
   .message__img--phone {
-    right: 184px;
+    right: 90px;
+    bottom: -320px;
   }
   .message__img--error {
     bottom: 50px;
     right: -70px;
   }
   .message__img--delay {
-    bottom: 50px;
+    bottom: 120px;
     right: -150px;
   }
 }
