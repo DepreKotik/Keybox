@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -155,8 +157,7 @@
               <li class="fieldset__item">
                 <label class="fieldset__label radio">
                   <span class="radio__description">Склад на Авторемонтной</span>
-                  <input class="radio__input visually-hidden" type="radio" name="warehouse"
-                    value="autoremontnaya">
+                  <input class="radio__input visually-hidden" type="radio" name="warehouse" value="autoremontnaya">
                   <span class="radio__mark"></span>
                 </label>
                 <span class="radio__schedule">по расписанию</span>
@@ -268,7 +269,8 @@
           </button>
         </div>
       </form>
-      <div class="boxes__result result">
+      <!-- Для показа сообщения об отсутствии боксов добавить класс "boxes__result--close" у "boxes__result"-->
+      <div class="boxes__result result boxes__result--close">
         <h2 class="result__title">Маленькие</h2>
         <ul class="result__list">
           <li class="result__item">
@@ -319,8 +321,8 @@
             <a class="result__link" href="/">
               <picture>
                 <source media="(min-width: 1150px)" srcset="assets/images/content/box-1,5.png" width="198" height="249">
-                <img class="result__img result__img--15" src="assets/images/content/box-1,5.png" width="107" height="134"
-                  alt="Фото бокса.">
+                <img class="result__img result__img--15" src="assets/images/content/box-1,5.png" width="107"
+                  height="134" alt="Фото бокса.">
               </picture>
               <div class="result__wrapper">
                 <h3 class="result__item-title">Бокс 1,5 м<sup>2</sup></h3>
@@ -342,8 +344,8 @@
             <a class="result__link" href="/">
               <picture>
                 <source media="(min-width: 1150px)" srcset="assets/images/content/box-1,5.png" width="198" height="249">
-                <img class="result__img result__img--15" src="assets/images/content/box-1,5.png" width="107" height="134"
-                  alt="Фото бокса.">
+                <img class="result__img result__img--15" src="assets/images/content/box-1,5.png" width="107"
+                  height="134" alt="Фото бокса.">
               </picture>
               <div class="result__wrapper">
                 <h3 class="result__item-title">Бокс 1,5 м<sup>2</sup></h3>
@@ -493,12 +495,27 @@
           </li>
         </ul>
       </div>
+      <!-- Для показа сообщения об отсутствии боксов убрать класс "message__wrapper--close" у "message__wrapper"-->
+      <div class="message__wrapper message__wrapper--underfind">
+        <h1 class="message__title message__title--underfind">Ничего не&nbsp;нашлось</h1>
+        <p class="message__description">Сейчас на&nbsp;складе нет боксов
+          с&nbsp;такими
+          параметрами. Попробуйте выбрать другие фильтры.
+        </p>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="assets/images/content/underfind-message.png, 
+        assets/images/content/underfind-message-2x.png 2x" width="651" height="294">
+          <img class="message__img message__img--underfind" src="assets/images/content/underfind-message.png"
+            srcset="assets/images/content/underfind-message-2x.png 2x" width="325" height="150"
+            alt="Изображение почтового ящика.">
+        </picture>
+      </div>
     </section>
     <button class="up-button" type="button">
       <span class="visually-hidden">Прокрутить страницу вверх</span>
     </button>
   </main>
-  <footer class="footer">
+  <footer class="footer footer--message-mod">
     <div class="footer__container container">
       <a class="footer__logo-link" href="index.html">
         <img class="footer__logo-svg" src="assets/images/svg/logo-icon-width-name.svg" width="219" height="41"
